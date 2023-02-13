@@ -11,6 +11,7 @@ import random
 list1 = []
 list2 = []
 n = int(input())
+print('Введите количество элементов второго массива:')
 m = int(input())
 
 for i in range(n):
@@ -22,11 +23,11 @@ for i in range(n):
 print(list1)
 print(list2)
 
-k = 0
+count = 0
 for i in range (n):
     for j in range(m):
         if (list1[i] == list2[j]):
-            k += 1
-    if k == 0:
+            count += 1
+    if count == 0:
         print(list1[i])
-    k = 0    
+    count = 0    
